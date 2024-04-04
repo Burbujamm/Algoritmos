@@ -1,0 +1,16 @@
+print('Bem vindo !! este programa detecta número primos')
+
+numero = int(input('Digite um número inteiro e natural'))  # 7
+cont = 1
+def isPrime(numero):# sim
+    for i in range(2, numero):  # 1 7
+        if numero % i == 0:  # 7 / 1 = 0
+            cont += 1
+        break
+
+if cont == 2:
+    print(numero, 'não é primo')
+else:
+    print(numero, 'é primo')
+
+print('obrigada por utilizar nosso programa')
